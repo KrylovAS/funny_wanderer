@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      
         <header class="header__top">
-          <nav>
-            <ul class="header-menu">
-              <li class="menu__item"><a href="#" class="menu__link"></a>О нас</li>
-              <li class="menu__item"><a href="#" class="menu__link"></a>Ближайшие мароприятия</li>
-              <li class="menu__item"><a href="#" class="menu__link"></a>Пройденный путь</li>
-              <li class="menu__item"><a href="#" class="menu__link"></a>Преимущества</li>
-              <li class="menu__item"><a href="#" class="menu__link"></a>Наша команда</li>
-              <li class="menu__item"><a href="#" class="menu__link"></a>Задать вопрос</li>
+          <div class="container">
+            <nav>
+            <ul class="header__menu">
+              <li class="menu__item"><a href="#" class="menu__link menu__link-active">О нас</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Ближайшие мероприятия</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Пройденный путь</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Наша команда</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Задать вопрос</a></li>
             </ul>
-          </nav>
-          <h1 class="header__title">
+            </nav>
+            <h1 class="header__title">
             Сборище веселых странников
-          </h1>
-          <p class="header__description">Новый взгляд на отдых</p>
-          <button class="header__button">Присоеденится</button>
+            </h1>
+            <p class="header__description">Новый взгляд на отдых</p>
+            <button class="header__button">Присоеденится</button>
+          </div>
         </header>
-      </header>
+      </div>
       <section class="about">
         <h2 class="section__title">Кто мы такие?</h2>
         <div class="container about__content">
@@ -40,6 +44,7 @@
           <img src="img/about600.jpg" alt="фотография участниуов" />
         </div>
       </section>
+
       <section class="events">
         <h2 class="section__title">Ближайшие мероприятия</h2>
         <div class="container events__content">
@@ -68,10 +73,12 @@
           </ul>
         </div>
       </section>
+
       <section class="road">
         <h2 class="section__title">Пройденный путь</h2>
         <div class="container road__content"></div>
       </section>
+
       <section class="feature">
         <h2 class="section__title">Почему мы</h2>
         <div class="container feature__content">
@@ -126,6 +133,7 @@
           </ul>
         </div>
       </section>
+
       <section class="team">
         <h2 class="section__title">Наша команда</h2>
         <div class="container team__content">
@@ -166,6 +174,7 @@
           </figure>
         </div>
       </section>
+
       <section class="feedback">
         <div class="container feedback__content">
           <form class="fedback__form" action="" method="get">
@@ -199,6 +208,7 @@
           </div>
         </div>
       </section>
+
       <footer class="footer">
         <div class="container footer__content">
           <nav>
@@ -207,7 +217,7 @@
               <li class="footer__menu_item"><a href="#" class="footer__menu_link">Контакты</a></li>
               <li class="footer__menu_item">
                 <a href="#" class="footer__menu_link">Ближайшие мероприятия</a>
-                <p class="footer__logo"></p>
+                <p class="footer__logo">EfremovaVN</p>
               </li>
             </ul>
           </nav>
