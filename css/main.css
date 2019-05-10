@@ -38,8 +38,20 @@ h1,
 h2,
 h3,
 p {
-	margin-top: 0;
+	margin: 0;
 	color: #010101;
+}
+
+figure {
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	padding-left: 0;
 }
 
 .wrapper {
@@ -68,10 +80,6 @@ p {
 	justify-content: space-between;
 	margin-top: 0;
 	padding-left: 0;
-}
-
-.menu__item {
-	list-style: none;
 }
 
 .menu__link {
@@ -132,13 +140,13 @@ p {
 	padding-bottom: 220px;
 	background: url('../img/about_bg_1920.jpg') no-repeat;
 	background-size: 80% 100%;
-	text-align: center;
 }
 
 .section__title {
 	font: 28px 'Prata';
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	text-align: center;
 }
 
 .section__title span {
@@ -165,10 +173,102 @@ p {
 }
 
 .events {
-	border: 1px solid red;
+	position: relative;
+	bottom: 145px;
 	text-align: center;
 }
 
-.events__list {
+.events h2 {
+	margin-bottom: 64px;
+}
+
+.events__content {
 	display: flex;
+	justify-content: center;
+	padding: 0 25px;
+}
+
+.events__image-block {
+	background-color: #d1d0cf;
+	margin-left: 20px;
+}
+
+.events__image-block img {
+	width: 100%;
+}
+
+.events__image-block figcaption {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 18px;
+}
+
+.events__btn {
+	position: relative;
+	top: 16px;
+	padding: 15px 58px;
+	background-color: #ff6d00;
+	font-size: 15px;
+	border: none;
+}
+
+.feature {
+	background: url('../img/feature_bg_1920.jpg') no-repeat;
+	background-size: 80% 100%;
+	background-position: right top;
+}
+
+.feature__content {
+	display: flex;
+	background-color: #faf0d7;
+	justify-content: space-around;
+	padding-top: 25px;
+}
+
+.feature__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 280px;
+}
+
+.feature h2 {
+	padding: 44px 0;
+}
+
+.feature__content img {
+	max-width: 430px;
+	padding-bottom: 25px;
+}
+
+.feature__item::before {
+	content: '';
+	display: block;
+	width: 73px;
+	height: 73px;
+	margin: 0 auto;
+	background: url('../img/feature_sprite.png') no-repeat;
+}
+.feature-icon-one:before {
+	background-position-x: -370px;
+}
+
+.feature-icon-two:before {
+	background-position-x: -290px;
+}
+
+.feature-icon-free:before {
+	background-position-x: -225px;
+}
+
+.feature-icon-four:before {
+	background-position-x: -155px;
+}
+
+.feature-icon-five:before {
+	background-position-x: -85px;
+}
+
+.feature__item {
+	text-align: center;
 }
