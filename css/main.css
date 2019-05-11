@@ -210,9 +210,11 @@ ul {
 	background-color: #ff6d00;
 	font-size: 15px;
 	border: none;
+	border-radius: 2px;
 }
 
 .feature {
+	padding-bottom: 60px;
 	background: url('../img/feature_bg_1920.jpg') no-repeat;
 	background-size: 80% 100%;
 	background-position: right top;
@@ -271,4 +273,25 @@ ul {
 
 .feature__item {
 	text-align: center;
+}
+
+.team .section__title {
+	padding-top: 35px;
+}
+
+.team__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.team__block {
+	max-width: 195px;
+}
+
+.team__block img {
+	width: 195px;
+}
+
+.team__block img:nth-child(3) {
+	width: 225px;
 }
