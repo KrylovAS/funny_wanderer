@@ -51,6 +51,7 @@ li {
 }
 
 ul {
+	margin: 0;
 	padding-left: 0;
 }
 
@@ -155,6 +156,10 @@ ul {
 
 .section__title span {
 	color: #ff6d00;
+}
+
+.about .section__title {
+	padding-bottom: 30px;
 }
 
 .about__content {
@@ -422,4 +427,39 @@ textarea::placeholder {
 	margin-top: 15px;
 	text-align: center;
 	display: block;
+}
+
+.footer {
+	background-color: #212121;
+}
+
+.footer__content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 40px 0;
+}
+
+.footer__content nav {
+	flex: 0 0 400px;
+	width: 100%;
+}
+
+.footer__menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__menu_link {
+	color: #f1f1f1;
+	text-decoration: none;
+}
+
+.footer__menu_link:hover {
+	color: #4d76a1;
+}
+
+.footer__logo {
+	font: 20px 'Prata', sans-serif;
+	color: #f1f1f1;
 }
