@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css" />    
     <link rel="stylesheet" href="css/main.css" />
-  </head>
+    
+    </head>
   <body>
     <div class="wrapper">
       
@@ -74,7 +75,36 @@
 
       <section class="road">
         <h2 class="section__title">Пройденный путь</h2>
-        <div class="container road__content"></div>
+        <div class="container road__content">
+          <div id="carousel" >
+            
+            <figure class="prev"  >
+                <img  class="" src="img/road_slide1.jpg" alt="Осенняя Вуокса">
+                <figcaption>
+                    Ладожское озеро
+                </figcaption>
+                
+            </figure>
+            <figure class="selected"  >
+              <img  class="" src="img/road_slide2.jpg" alt="Осенняя Вуокса">
+              <figcaption>
+                  Осенняя Вуокса
+              </figcaption>
+                  
+            </figure>
+            <figure class="next"  >
+                <img  class="" src="img/road_slide3.jpg" alt="Осенняя Вуокса">
+                <figcaption>
+                    Градуевские озера
+                </figcaption>                
+            </figure>  
+            <div class="buttonsSlide">
+                <button id="prev"><</button>
+                <button id="next">></button>
+              </div>       
+          </div>         
+  
+        </div>
       </section>
 
       <section class="feature">
@@ -210,5 +240,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/slider.js"></script>
   </body>
 </html>
