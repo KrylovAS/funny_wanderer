@@ -19,7 +19,7 @@ const gulp = require('gulp'),
 gulp.task('browser-sync', function() {
 	browserSync({
 		server: {
-			baseDir: 'app',
+			baseDir: '../',
 		},
 		notify: false,
 	});
@@ -28,16 +28,16 @@ gulp.task('browser-sync', function() {
 gulp.task('sass', function() {
 	// Создаем таск Sass
 	return gulp
-		.src([ 'app/scss/**/*.sass', 'app/scss/**/*.scss' ])
+		.src([ 'scss/**/*.sass', 'scss/**/*.scss' ])
 		.pipe(sass({ outputStyle: 'expand' }).on('error', notify.onError()))
 		.pipe(autoprefixer([ 'last 3 versions' ], { cascade: true })) // Создаем префиксы
-		.pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
+		.pipe(gulp.dest('css')) // Выгружаем результата в папку app/css
 		.pipe(browserSync.reload({ stream: true })); // Обновляем CSS на странице при изменении
 });
 //минификация изображений
 gulp.task('imagemin', function() {
 	return gulp
-		.src('app/img/*')
+		.src('img/*')
 		.pipe(
 			cache(
 				imagemin(
@@ -54,20 +54,20 @@ gulp.task('imagemin', function() {
 				)
 			)
 		)
-		.pipe(gulp.dest('app/img'));
+		.pipe(gulp.dest('img'));
 });
 
 gulp.task('watch', [ 'sass', 'browser-sync', 'imagemin' ], function() {
-	gulp.watch('app/scss/**/*.scss', [ 'sass' ]);
-	gulp.watch([ 'app/js/**/*.js', 'app/js/common.js' ], [ 'js' ]);
-	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/img/*', [ 'imagemin' ]);
+	gulp.watch('scss/**/*.scss', [ 'sass' ]);
+	gulp.watch([ 'js/**/*.js' ], [ 'js' ]);
+	gulp.watch('*.html', browserSync.reload);
+	gulp.watch('img/*', [ 'imagemin' ]);
 });
 
 //собираем svg sprite
 gulp.task('sprite', function() {
 	return gulp
-		.src('app/img/svg/*.svg')
+		.src('img/svg/*.svg')
 		.pipe(
 			svgmin({
 				js2svg: {
@@ -92,7 +92,7 @@ gulp.task('sprite', function() {
 			})
 		)
 		.pipe(rename('sprite.svg'))
-		.pipe(gulp.dest('app/img/svg'));
+		.pipe(gulp.dest('img/svg'));
 });
 
 //вставляем инлайном svg sprite
@@ -103,5 +103,5 @@ gulp.task('sprite', function() {
 //  <use href="#icon-vk"></use>
 //</svg>
 gulp.task('html', () => {
-	return gulp.src('app/*.html').pipe(posthtml([ include() ])).pipe(gulp.dest('app'));
+	return gulp.src('*.html').pipe(posthtml([ include() ])).pipe(gulp.dest('/'));
 });
