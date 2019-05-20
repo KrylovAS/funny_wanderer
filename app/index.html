@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />    
+    <link rel="stylesheet" href="css/main.css" />
+    
+    </head>
+  <body>
+    <div class="wrapper">
+      
+      <header class="header__top">
+          <div class="container header__content">
+            <nav>
+            <ul class="header__menu">
+              <li class="menu__item"><a href="#" class="menu__link menu__link-active">О нас</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Ближайшие мероприятия</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Пройденный путь</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Наша команда</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Задать вопрос</a></li>
+            </ul>
+            </nav>
+            <h1 class="header__title">
+            Сборище веселых странников
+            </h1>
+            <p class="header__desc">Новый взгляд на отдых</p>
+            <button class="header__btn btn">Присоедениться</button>
+          </div>
+      </header>
+      
+      <section class="about">
+        <h2 class="section__title">Кто мы такие<span>?</span></h2>
+        <div class="container about__content">
+          <p class="about__desc">
+            Мы клуб веселых и находчивых!<br>Те, кому скучно проводить выходные, лёжа на<br>диване, а
+            отпуск, подгорая на пляже.<br>Туризм и приключения это то, на что имеет смысл<br>тратить свое
+            свободное время.<br>Поход это лучший способ поднять жизненный<br>тонус и найти новых друзей.<br>Наш клуб не коммерческий. Все вылазки, покатушки,<br>развлекушки мы придумываем сами, сами
+            во все это<br> вкладываемся и сами в этом участвуем.
+          </p>
+          <img src="img/about600.jpg" alt="фотография участниуов" />
+        </div>
+      </section>
+
+      <section class="events">
+        <h2 class="section__title">Ближайшие мероприятия</h2>
+        <div class="container events__content">
+          <figure class="events__image-block" >
+            <img class="events__img"  src="img/events1_360.jpg" alt="Парк Монрепо" />
+            <figcaption>
+                Парк Монрепо
+            </figcaption>
+            <button class="events__btn btn">Подробнее</button>
+          </figure>
+          <figure class="events__image-block"  >
+            <img  class="events__img" src="img/events2_360.jpg" alt="Осенняя Вуокса">
+            <figcaption>
+                Осенняя Вуокса
+            </figcaption>
+            <button class="events__btn btn">Подробнее</button>
+          </figure>
+          <figure class="events__image-block"  >
+            <img class="events__img"  src="img/events3_360.jpg" alt="Лыжный похо">
+            <figcaption>
+                Лыжный поход
+            </figcaption>
+            <button class="events__btn btn">Подробнее</button>  
+          </figure>
+                  
+        </div>
+      </section>
+
+      <section class="road">
+        <h2 class="section__title">Пройденный путь</h2>
+        <div class="container road__content">
+          <div id="carousel" >
+            
+            <figure class="prev"  >
+                <img  class="" src="img/road_slide1.jpg" alt="Осенняя Вуокса">
+                <figcaption>
+                    Ладожское озеро
+                </figcaption>
+                
+            </figure>
+            <figure class="selected"  >
+              <img  class="" src="img/road_slide2.jpg" alt="Осенняя Вуокса">
+              <figcaption>
+                  Осенняя Вуокса
+              </figcaption>
+                  
+            </figure>
+            <figure class="next"  >
+                <img  class="" src="img/road_slide3.jpg" alt="Осенняя Вуокса">
+                <figcaption>
+                    Градуевские озера
+                </figcaption>                
+            </figure>  
+            <div class="buttonsSlide">
+                <button id="prev"><</button>
+                <button id="next">></button>
+              </div>       
+          </div>         
+  
+        </div>
+      </section>
+
+      <section class="feature">
+        <h2 class="section__title">Почему мы<span>?</span></h2>
+        <div class="container feature__content">
+          <ul class="feature__list">
+            <li class="feature__item feature-icon-one">
+              <h3 class="feature__item-title">Не коммерческая организация</h3>
+              <p class="feature__item-desc">
+                Прежде всего, наши мероприятия, почти всегда связаны с импровизацией на маршруте. Мы
+                очень редко ходим по четко известным трекам с четко запланированной программой. Чаще
+                всего ведущий, так же как и вы в этих местах впервые
+              </p>
+            </li>
+            <li class="feature__item feature-icon-two">
+              <h3 class="feature__item-title">Разная сложность</h3>
+              <p class="feature__item-desc">
+                Если вы новичок, и никогда не были в походе, но дух приключений и авантюризма, сидит
+                где-то в вас, и рвется наружу, просто подберите подходящий маршрут. А если вы в
+                походах уже "бывалый", найдется мероприятие и для вас.
+              </p>
+            </li>
+            <li class="feature__item feature-icon-free">
+              <h3 class="feature__item-title">Мы не ставим рекорды</h3>
+              <p class="feature__item-desc">
+                Мы не гонимся за категориями, не занимаемся подготовкой спецназа.Так же, мы не
+                требуем какой то особой подготовки водной, горной и т.д.
+              </p>
+            </li>
+          </ul>
+          <img src="img/feature_middle_1920.jpg" alt="река" class="feature__img-middle" />
+          <ul class="feature__list">
+            <li class="feature__item feature-icon-four">
+              <h3 class="feature__item-title">У нас все по-другому!!!</h3>
+              <p class="feature__item-desc">
+                Наши мероприятия это не пикники! Это именно туризм и приключения. Это означает что
+                мы ждем людей с фантазией и юмором, ищущих что то не обычное, неформальное.
+              </p>
+            </li>
+            <li class="feature__item feature-icon-five">
+              <h3 class="feature__item-title">Разнообразные направления</h3>
+              <p class="feature__item-desc">
+                -Водные походы на лодках и на байдарках -вело-прогулки -автомобильные и пешие походы
+                -культурные прогулки по городу -походы в музеи и на выставки и т.д.
+              </p>
+            </li>
+            <li class="feature__item">
+              <h3 class="feature__item-title">Мы любим дикую природу</h3>
+              <p class="feature__item-desc">
+                Это означает что мы лезем и в чащи и в болота без ограничений и вообще в такие места
+                в которые обычному человеку и в голову не придет.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="team">
+        <h2 class="section__title">Наша команда</h2>
+        <div class="container team__content">
+          <figure class="team__block">
+            <img src="img/team_member1.jpg" alt="Иван" />
+            <figcaption>
+              <span class="team__member-name">Иван</span>Повелитель топора, огня и просто мастер на
+              все руки <span class="team__phone">+7-999-888-77-66</span>
+            </figcaption>
+          </figure>
+          <figure class="team__block" >
+            <img src="img/team_member2.jpg" alt="Надежда" />
+            <figcaption>
+              <span class="team__member-name">Надежда</span>Правая рука, завхоз, мастер половника и
+              котелка<span class="team__phone">+7-999-888-77-66</span>
+            </figcaption>
+          </figure>
+          <figure class="team__block head__member">
+            <img src="img/team_member3.jpg" alt="Василий" />
+            <figcaption>
+              <span class="team__member-name">Василий</span>Самый главный глава и
+              массовик-затейник<span class="team__phone">+7-999-888-77-66</span>
+            </figcaption>
+          </figure>
+          <figure class="team__block">
+            <img src="img/team_member4.jpg" alt="Татьяна" />
+            <figcaption>
+              <span class="team__member-name">Татьяна</span>Главный театрал<br> или<br> «шило»-
+              культурное<span class="team__phone">+7-999-888-77-66</span>
+            </figcaption>
+          </figure>
+          <figure class="team__block">
+            <img src="img/team_member5.jpg" alt="Владимир" />
+            <figcaption>
+              <span class="team__member-name">Владимир</span>Главный по спицам и колесам, знает о
+              велосипедах все<span class="team__phone">+7-999-888-77-66</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="container feedback__content">
+          <form class="feedback__form" action="" method="get">
+            <p class="form__title">Задайте нам вопрос</p>
+            <input class="feedback__text" type="text" placeholder="Имя"/>
+            <input class="feedback__tel" type="tel" name="" id="" placeholder="Телефон" />
+            <input class="feedback__email" type="email" name="" id="" placeholder="Email"/>
+            <textarea class="feedback__textarea" name="" id="" cols="30" rows="10" placeholder="Вопрос"></textarea>
+            <input class="feedback__btn btn" type="button" value="Отправить" />
+          </form>
+          <div class="feedback__social">
+            <div class="social__conteiner">
+              <p class="social__title">Или вступайте в нашу   группу в контакте</p>
+              <a class="feedback__icon-vk" href="https:// vk.com/">
+              
+              <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="Capa_1" width="50px" style="enable-background:new 0 0 112.196 112.196;" version="1.1" viewBox="0 0 112.196 112.196" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><circle cx="56.098" cy="56.098" id="XMLID_11_" r="56.098" style="fill:#4D76A1;"/></g><path d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878   c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235   c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463   c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069   c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297   c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514   c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644   c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446   c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069   c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993   C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;"/></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer__content">
+          <nav>
+            <ul class="footer__menu">
+              <li class="footer__menu_item"><a href="#" class="footer__menu_link">Главная</a></li>
+              <li class="footer__menu_item"><a href="#" class="footer__menu_link">Контакты</a></li>
+              <li class="footer__menu_item">
+                <a href="#" class="footer__menu_link">Ближайшие мероприятия</a>                
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__logo">EfremovaVN</p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/slider.js"></script>
+  </body>
+</html>
