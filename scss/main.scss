@@ -1,0 +1,43 @@
+@import '_fonts';
+
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'OpenSans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	color: #010101;
+}
+
+figure {
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+}
+
+// * {
+// 	border: 1px solid red;
+// }
+
+.container {
+	margin: 0 auto;
+	max-width: 1140px;
+}
+
+@import 'header';
