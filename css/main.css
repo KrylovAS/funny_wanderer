@@ -300,8 +300,8 @@
 
 .events {
   position: relative;
-  bottom: 145px;
-  margin-bottom: -100px;
+  bottom: 190px;
+  margin-bottom: -140px;
   text-align: center; }
 
 .events .section__title {
@@ -337,7 +337,8 @@
 
 @media (max-width: 480px) {
   .events {
-    position: static; }
+    position: static;
+    margin-bottom: 0; }
   .events .section__title {
     padding: 40px 0;
     background: #607070; }
@@ -375,7 +376,7 @@
           justify-content: space-between;
   max-width: 280px; }
 
-.feature h2 {
+.feature .section__title {
   padding: 44px 0; }
 
 .feature__content img {
@@ -495,11 +496,18 @@
 
 #prev,
 #next {
-  border-radius: 50%;
   outline: none;
-  padding: 15px 20px;
-  background-color: #ff6d00;
-  font-size: 40px; }
+  border: none;
+  cursor: pointer;
+  width: 65px;
+  height: 60px;
+  background: url("../img/feature_sprite.png"); }
+
+#prev {
+  background-position-x: 150px; }
+
+#next {
+  background-position-x: 65px; }
 
 .next figcaption {
   text-align: end;
@@ -508,6 +516,9 @@
 .prev figcaption {
   text-align: start;
   padding-left: 90px; }
+
+.selected figcaption {
+  text-align: center; }
 
 .hiddenSlideBtn {
   opacity: 0;
@@ -814,6 +825,7 @@ ul {
   color: #ff6d00; }
 
 .btn {
+  outline: none;
   background-color: #ff6d00;
   border: 1px solid #ff6d00;
   border-radius: 2px;

@@ -1,8 +1,8 @@
 @import 'variable';
 .events {
 	position: relative;
-	bottom: 145px;
-	margin-bottom: -100px;
+	bottom: 190px;
+	margin-bottom: -140px;
 	text-align: center;
 }
 
@@ -42,6 +42,7 @@
 @media (max-width: $max-width-mob) {
 	.events {
 		position: static;
+		margin-bottom: 0;
 	}
 
 	.events .section__title {
