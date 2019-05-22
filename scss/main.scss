@@ -1,5 +1,13 @@
-@import '_fonts';
+@import 'fonts';
+@import 'variable';
 @import 'header';
+@import 'about';
+@import 'events';
+@import 'feature';
+@import 'road';
+@import 'team';
+@import 'feedback';
+@import 'footer';
 
 *,
 :after,
@@ -39,4 +47,26 @@ ul {
 .container {
 	margin: 0 auto;
 	max-width: 1140px;
+}
+
+.header,
+.about,
+.events,
+.road,
+.feature,
+.team,
+.feedback,
+.footer {
+	overflow: hidden;
+}
+
+.section__title {
+	font: 28px 'Prata';
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.section__title span {
+	color: #ff6d00;
 }

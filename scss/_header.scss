@@ -1,4 +1,6 @@
-.header__top {
+@import 'variable';
+
+.header {
 	padding-top: 50px;
 	padding-bottom: 310px;
 	background-color: #9e957e;
@@ -75,7 +77,7 @@
 }
 
 @media (max-width: 960px) and (min-width: 481px) {
-	.header__top {
+	.header {
 		background: url(../img/header_bg_1200.jpg) no-repeat;
 	}
 
@@ -84,8 +86,8 @@
 	}
 }
 
-@media (max-width: 480px) {
-	.header__top {
+@media (max-width: $max-width-mob) {
+	.header {
 		padding-top: 120px;
 		height: 100vh;
 		background: url(../img/header_bg_480.jpg) no-repeat center/cover;

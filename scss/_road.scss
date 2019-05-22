@@ -1,0 +1,84 @@
+@import 'variable';
+
+.road .section__title {
+	margin-bottom: 40px;
+}
+#carousel {
+	position: relative;
+	padding: 0 100px;
+	height: 500px;
+
+	overflow: hidden;
+}
+
+#carousel figure {
+	position: absolute;
+	transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+	opacity: 1;
+}
+
+#carousel figure img {
+	width: 600px;
+	transition: width 0.7s;
+}
+
+#carousel figure.prev {
+	z-index: 3;
+	left: 30%;
+	transform: translateY(30px) translateX(-70%);
+	opacity: 0.5;
+}
+
+#carousel figure.prev img,
+#carousel figure.next img {
+	width: 500px;
+}
+
+#carousel figure.selected {
+	z-index: 4;
+	left: 50%;
+	transform: translateY(0px) translateX(-50%);
+}
+#carousel figure.next {
+	z-index: 3;
+	left: 70%;
+	transform: translateY(30px) translateX(-20%);
+	opacity: 0.5;
+}
+.buttonsSlide {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 900;
+	top: 30%;
+}
+
+#prev,
+#next {
+	border-radius: 50%;
+	outline: none;
+	padding: 15px 20px;
+	background-color: #ff6d00;
+	font-size: 40px;
+}
+
+.next figcaption {
+	text-align: end;
+	padding-right: 130px;
+}
+
+.prev figcaption {
+	text-align: start;
+	padding-left: 90px;
+}
+
+.hiddenSlideBtn {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+@media (max-width: $max-width-mob) {
+	.road {
+		display: none;
+	}
+}
