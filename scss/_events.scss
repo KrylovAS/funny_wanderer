@@ -2,11 +2,13 @@
 .events {
 	position: relative;
 	bottom: 145px;
+	margin-bottom: -100px;
 	text-align: center;
 }
 
-.events h2 {
-	margin-bottom: 64px;
+.events .section__title {
+	padding-bottom: 68px;
+	padding-top: 48px;
 }
 
 .events__content {

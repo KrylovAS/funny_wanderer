@@ -81,11 +81,6 @@
   font-size: 25px;
   color: #373737; }
 
-.btn {
-  background-color: #ff6d00;
-  border: none;
-  border-radius: 2px; }
-
 .header__btn {
   margin-top: 42px;
   padding: 20px 68px;
@@ -306,10 +301,12 @@
 .events {
   position: relative;
   bottom: 145px;
+  margin-bottom: -100px;
   text-align: center; }
 
-.events h2 {
-  margin-bottom: 64px; }
+.events .section__title {
+  padding-bottom: 68px;
+  padding-top: 48px; }
 
 .events__content {
   display: -webkit-box;
@@ -434,7 +431,8 @@
     padding-bottom: 10px; } }
 
 .road .section__title {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-top: 48px; }
 
 #carousel {
   position: relative;
@@ -814,3 +812,15 @@ ul {
 
 .section__title span {
   color: #ff6d00; }
+
+.btn {
+  background-color: #ff6d00;
+  border: 1px solid #ff6d00;
+  border-radius: 2px;
+  cursor: pointer; }
+  .btn:hover {
+    background: none;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    color: #fff; }

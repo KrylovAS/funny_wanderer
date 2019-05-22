@@ -70,3 +70,15 @@ ul {
 .section__title span {
 	color: #ff6d00;
 }
+
+.btn {
+	background-color: #ff6d00;
+	border: 1px solid #ff6d00;
+	border-radius: 2px;
+	cursor: pointer;
+	&:hover {
+		background: none;
+		transition: all 1s;
+		color: #fff;
+	}
+}
