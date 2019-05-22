@@ -1,4 +1,5 @@
 @import '_fonts';
+@import 'header';
 
 *,
 :after,
@@ -39,5 +40,3 @@ ul {
 	margin: 0 auto;
 	max-width: 1140px;
 }
-
-@import 'header';
