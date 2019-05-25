@@ -41,10 +41,17 @@
 	font-size: 15px;
 }
 
+@media (max-width: $max-width-tablet) {
+	.events__content {
+		flex-wrap: wrap;
+	}
+}
+
 @media (max-width: $max-width-tablet) and (min-width: 481px) {
 	.events {
 		bottom: 10;
 	}
+
 	.events__image-block {
 		width: 250px;
 	}
