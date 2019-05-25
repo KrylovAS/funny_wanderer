@@ -117,7 +117,7 @@
     background-color: #27ae60;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 40px;
     z-index: 9999999; }
     .mobile-menu__btn {
       position: relative;
@@ -171,7 +171,7 @@
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      top: 50px;
+      top: 40px;
       left: 0;
       right: 0;
       z-index: 999;

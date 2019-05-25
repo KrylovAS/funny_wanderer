@@ -49,12 +49,12 @@ function startSlider() {
 	});
 }
 
-let a = document.getElementsByClassName('mobile-menu__container')[0];
+// let a = document.getElementsByClassName('mobile-menu__container')[0];
 
-let z = document.getElementsByClassName('mobile-menu__item');
+// let z = document.getElementsByClassName('mobile-menu__item');
 
-for (let key of z) {
-	key.addEventListener('click', function() {
-		a.style = 'height: 0';
-	});
-}
+// for (let key of z) {
+// 	key.addEventListener('click', function() {
+// 		a.style = 'height: 0';
+// 	});
+// }
