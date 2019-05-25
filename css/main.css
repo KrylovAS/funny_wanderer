@@ -260,6 +260,7 @@
   background-size: 80% 100%; }
 
 .about .section__title {
+  padding-top: 30px;
   padding-bottom: 30px; }
 
 .about__content {
@@ -343,8 +344,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 0 25px; }
 
 .events__image-block {
