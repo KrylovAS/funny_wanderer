@@ -3,6 +3,7 @@
 .feedback {
 	background: url('../img/feedback_bg_1920.jpg') no-repeat center/cover;
 	border-top: 2px solid #c0c0c2;
+	scroll-behavior: smooth;
 }
 
 .feedback__content {
@@ -77,6 +78,7 @@ textarea::placeholder {
 }
 
 .social__title {
+	padding: 0 70px;
 	font-size: 30px;
 	font-weight: 700;
 	color: #f1f1f1;
