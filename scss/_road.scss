@@ -92,7 +92,14 @@
 	transition: opacity 1s;
 }
 
-@media (max-width: $max-width-mob) {
+@media (max-width: $max-width-tablet) {
+	.road .section__title {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 600px) {
 	.road {
 		display: none;
 	}

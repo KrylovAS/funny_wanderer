@@ -88,7 +88,21 @@ textarea::placeholder {
 	display: block;
 }
 
-@media (max-width: $max-width-mob) {
+@media (max-width: $max-width-tablet) and (min-width: 481px) {
+	.feedback {
+		background: url('../img/feedback_bg_768.jpg') no-repeat cover;
+		border-top: 2px solid #c0c0c2;
+	}
+	.feedback__form {
+		max-width: 481px;
+	}
+	.feedback__form,
+	.feedback__social {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: $max-width-tablet) {
 	.feedback {
 		background: url('../img/feedback_bg_480.jpg') no-repeat cover;
 		border-top: 2px solid #c0c0c2;

@@ -14,12 +14,14 @@
 .events__content {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	padding: 0 25px;
 }
 
 .events__image-block {
 	background-color: #d1d0cf;
 	margin-left: 20px;
+	margin-bottom: 15px;
 }
 
 .events__image-block img {
@@ -39,6 +41,15 @@
 	font-size: 15px;
 }
 
+@media (max-width: $max-width-tablet) and (min-width: 481px) {
+	.events {
+		bottom: 10;
+	}
+	.events__image-block {
+		width: 250px;
+	}
+}
+
 @media (max-width: $max-width-mob) {
 	.events {
 		position: static;
@@ -53,10 +64,6 @@
 
 	.events h2 {
 		margin-bottom: 0;
-	}
-
-	.events__content {
-		flex-direction: column;
 	}
 
 	.events__image-block {
