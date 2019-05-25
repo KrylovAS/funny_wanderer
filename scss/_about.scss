@@ -30,6 +30,12 @@
 	width: 585px;
 }
 
+@media (min-width: 170px) {
+	.about {
+		background-size: 70% 100%;
+	}
+}
+
 @media (max-width: $max-width-tablet) and (min-width: 481px) {
 	.about {
 		padding-top: 0;

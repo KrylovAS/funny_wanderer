@@ -29,7 +29,8 @@
 .feedback__email,
 .feedback__textarea {
 	padding-left: 5px;
-	background-color: #040404;
+	background-color: #00000048;
+
 	border: 1px solid #c0c0c2;
 	color: #fff;
 }
@@ -72,7 +73,7 @@ textarea::placeholder {
 .feedback__social {
 	display: flex;
 	align-items: center;
-	padding-left: 50px;
+	padding-left: 100px;
 }
 
 .social__title {

@@ -1,5 +1,11 @@
 @import 'variable';
 
+.feature {
+	background: url('../img/feature_bg_1920.jpg') no-repeat;
+	background-size: 75% 100%;
+	background-position: right top;
+}
+
 .feature__content {
 	display: flex;
 	background-color: #faf0d7;
@@ -55,6 +61,12 @@
 
 .feature__item {
 	text-align: center;
+}
+
+@media (min-width: 1600px) {
+	.feature {
+		background-size: 65% 100%;
+	}
 }
 
 @media (max-width: $max-width-tablet) and (min-width: 481px) {
